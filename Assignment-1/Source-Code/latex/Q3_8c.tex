@@ -1,0 +1,62 @@
+\hypertarget{Q3_8c}{}\section{Q3.\+c File Reference}
+\label{Q3_8c}\index{Q3.\+c@{Q3.\+c}}
+
+
+Q3  This program is used to ping a server.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$netdb.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for Q3.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{Q3_8c_a37b251fb907c1eee05fd01b71be56cb2}{dns\+\_\+lookup} (char $\ast$addr\+\_\+host, struct sockaddr\+\_\+in $\ast$addr\+\_\+con)
+\item 
+int \hyperlink{Q3_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Q3  This program is used to ping a server. 
+
+\begin{DoxyAuthor}{Author}
+Prateek 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Q3_8c_a37b251fb907c1eee05fd01b71be56cb2}\label{Q3_8c_a37b251fb907c1eee05fd01b71be56cb2}} 
+\index{Q3.\+c@{Q3.\+c}!dns\+\_\+lookup@{dns\+\_\+lookup}}
+\index{dns\+\_\+lookup@{dns\+\_\+lookup}!Q3.\+c@{Q3.\+c}}
+\subsubsection{\texorpdfstring{dns\+\_\+lookup()}{dns\_lookup()}}
+{\footnotesize\ttfamily char$\ast$ dns\+\_\+lookup (\begin{DoxyParamCaption}\item[{char $\ast$}]{addr\+\_\+host,  }\item[{struct sockaddr\+\_\+in $\ast$}]{addr\+\_\+con }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & address of the website to ping \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+IP address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q3_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{Q3_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Q3.\+c@{Q3.\+c}!main@{main}}
+\index{main@{main}!Q3.\+c@{Q3.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main Function. 
+
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
