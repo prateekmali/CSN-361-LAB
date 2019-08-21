@@ -4,6 +4,7 @@
 * @detail       Zombie Process
 * @author       Prateek
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -12,7 +13,7 @@ int main(){
     printf("Parent PID : %d",getpid());
     int k = fork();
     if(k != 0){
-        sleep(100); //parent went to sleep
+        sleep(1); //parent went to sleep
     }
     else
     {
