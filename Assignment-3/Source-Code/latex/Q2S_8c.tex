@@ -1,0 +1,120 @@
+\hypertarget{Q2S_8c}{}\section{Q2\+S.\+c File Reference}
+\label{Q2S_8c}\index{Q2\+S.\+c@{Q2\+S.\+c}}
+
+
+Q2  Server Side Code.  
+
+
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+Include dependency graph for Q2\+S.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Q2S_8c_ac0a4ce3bd388c7823743b526e7cb77fb}\label{Q2S_8c_ac0a4ce3bd388c7823743b526e7cb77fb}} 
+\#define {\bfseries I\+P\+\_\+\+P\+R\+O\+T\+O\+C\+OL}~0
+\item 
+\mbox{\Hypertarget{Q2S_8c_a47a4d3bbd05894abbce0ffd1d266aa88}\label{Q2S_8c_a47a4d3bbd05894abbce0ffd1d266aa88}} 
+\#define {\bfseries P\+O\+R\+T\+\_\+\+NO}~15050
+\item 
+\mbox{\Hypertarget{Q2S_8c_a30ba2113ad1b0f91029d017fc988d9af}\label{Q2S_8c_a30ba2113ad1b0f91029d017fc988d9af}} 
+\#define {\bfseries N\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~32
+\item 
+\mbox{\Hypertarget{Q2S_8c_abace6f1e028b11cc237bd95c5dbe451a}\label{Q2S_8c_abace6f1e028b11cc237bd95c5dbe451a}} 
+\#define {\bfseries cipher\+Key}~\textquotesingle{}S\textquotesingle{}
+\item 
+\mbox{\Hypertarget{Q2S_8c_a6e618c0ec6ffc8ac4489d11c65a5a67c}\label{Q2S_8c_a6e618c0ec6ffc8ac4489d11c65a5a67c}} 
+\#define {\bfseries sendrecvflag}~0
+\item 
+\mbox{\Hypertarget{Q2S_8c_a49e1fa6b4860231cbcb87bd74f65569f}\label{Q2S_8c_a49e1fa6b4860231cbcb87bd74f65569f}} 
+\#define {\bfseries nofile}~\char`\"{}File Not Found!\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Q2S_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}{clear\+Buf} (char $\ast$b)
+\item 
+char \hyperlink{Q2S_8c_a4fc6ad5854f646cf1e284f66e104219f}{Cipher} (char ch)
+\item 
+int \hyperlink{Q2S_8c_a19fc2d7afbfbca5d5b78534e8eeb6b29}{send\+File} (F\+I\+LE $\ast$fp, char $\ast$buf, int s)
+\item 
+int \hyperlink{Q2S_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Q2  Server Side Code. 
+
+\begin{DoxyAuthor}{Author}
+Prateek 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Q2S_8c_a4fc6ad5854f646cf1e284f66e104219f}\label{Q2S_8c_a4fc6ad5854f646cf1e284f66e104219f}} 
+\index{Q2\+S.\+c@{Q2\+S.\+c}!Cipher@{Cipher}}
+\index{Cipher@{Cipher}!Q2\+S.\+c@{Q2\+S.\+c}}
+\subsubsection{\texorpdfstring{Cipher()}{Cipher()}}
+{\footnotesize\ttfamily char Cipher (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2S_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}\label{Q2S_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}} 
+\index{Q2\+S.\+c@{Q2\+S.\+c}!clear\+Buf@{clear\+Buf}}
+\index{clear\+Buf@{clear\+Buf}!Q2\+S.\+c@{Q2\+S.\+c}}
+\subsubsection{\texorpdfstring{clear\+Buf()}{clearBuf()}}
+{\footnotesize\ttfamily void clear\+Buf (\begin{DoxyParamCaption}\item[{char $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2S_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q2S_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Q2\+S.\+c@{Q2\+S.\+c}!main@{main}}
+\index{main@{main}!Q2\+S.\+c@{Q2\+S.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main Function. 
+
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
+Main Function \begin{DoxyReturn}{Returns}
+Int
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2S_8c_a19fc2d7afbfbca5d5b78534e8eeb6b29}\label{Q2S_8c_a19fc2d7afbfbca5d5b78534e8eeb6b29}} 
+\index{Q2\+S.\+c@{Q2\+S.\+c}!send\+File@{send\+File}}
+\index{send\+File@{send\+File}!Q2\+S.\+c@{Q2\+S.\+c}}
+\subsubsection{\texorpdfstring{send\+File()}{sendFile()}}
+{\footnotesize\ttfamily int send\+File (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{char $\ast$}]{buf,  }\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Buffer} & \\
+\hline
+{\em Flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

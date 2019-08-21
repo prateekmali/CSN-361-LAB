@@ -1,0 +1,74 @@
+\hypertarget{Q1_8c}{}\section{Q1.\+c File Reference}
+\label{Q1_8c}\index{Q1.\+c@{Q1.\+c}}
+
+
+Q1  Socket program to determine class, Network and Host ID of an I\+Pv4 address.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for Q1.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{Q1_8c_a3c8e4c47b9baee1e932f275cf859212f}{find\+Class} (char S\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{Q1_8c_a335c1fda6c02ad224c8fc60f96dced75}{separate} (char S\mbox{[}$\,$\mbox{]}, char ip\+Class)
+\item 
+int \hyperlink{Q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Q1  Socket program to determine class, Network and Host ID of an I\+Pv4 address. 
+
+\begin{DoxyAuthor}{Author}
+Prateek 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Q1_8c_a3c8e4c47b9baee1e932f275cf859212f}\label{Q1_8c_a3c8e4c47b9baee1e932f275cf859212f}} 
+\index{Q1.\+c@{Q1.\+c}!find\+Class@{find\+Class}}
+\index{find\+Class@{find\+Class}!Q1.\+c@{Q1.\+c}}
+\subsubsection{\texorpdfstring{find\+Class()}{findClass()}}
+{\footnotesize\ttfamily char find\+Class (\begin{DoxyParamCaption}\item[{char}]{S\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ipv4} & address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Q1.\+c@{Q1.\+c}!main@{main}}
+\index{main@{main}!Q1.\+c@{Q1.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main Function. 
+
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q1_8c_a335c1fda6c02ad224c8fc60f96dced75}\label{Q1_8c_a335c1fda6c02ad224c8fc60f96dced75}} 
+\index{Q1.\+c@{Q1.\+c}!separate@{separate}}
+\index{separate@{separate}!Q1.\+c@{Q1.\+c}}
+\subsubsection{\texorpdfstring{separate()}{separate()}}
+{\footnotesize\ttfamily void separate (\begin{DoxyParamCaption}\item[{char}]{S\mbox{[}$\,$\mbox{]},  }\item[{char}]{ip\+Class }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ipv4} & address \\
+\hline
+{\em Class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL 
+\end{DoxyReturn}

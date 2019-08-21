@@ -1,0 +1,117 @@
+\hypertarget{Q2C_8c}{}\section{Q2\+C.\+c File Reference}
+\label{Q2C_8c}\index{Q2\+C.\+c@{Q2\+C.\+c}}
+
+
+Q2  Client Side Code.  
+
+
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+Include dependency graph for Q2\+C.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Q2C_8c_ac0a4ce3bd388c7823743b526e7cb77fb}\label{Q2C_8c_ac0a4ce3bd388c7823743b526e7cb77fb}} 
+\#define {\bfseries I\+P\+\_\+\+P\+R\+O\+T\+O\+C\+OL}~0
+\item 
+\mbox{\Hypertarget{Q2C_8c_ad8a262037cbfb38d1512f0073eeb7a66}\label{Q2C_8c_ad8a262037cbfb38d1512f0073eeb7a66}} 
+\#define {\bfseries I\+P\+\_\+\+A\+D\+D\+R\+E\+SS}~\char`\"{}127.\+0.\+0.\+1\char`\"{}
+\item 
+\mbox{\Hypertarget{Q2C_8c_a47a4d3bbd05894abbce0ffd1d266aa88}\label{Q2C_8c_a47a4d3bbd05894abbce0ffd1d266aa88}} 
+\#define {\bfseries P\+O\+R\+T\+\_\+\+NO}~15050
+\item 
+\mbox{\Hypertarget{Q2C_8c_a30ba2113ad1b0f91029d017fc988d9af}\label{Q2C_8c_a30ba2113ad1b0f91029d017fc988d9af}} 
+\#define {\bfseries N\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}~32
+\item 
+\mbox{\Hypertarget{Q2C_8c_abace6f1e028b11cc237bd95c5dbe451a}\label{Q2C_8c_abace6f1e028b11cc237bd95c5dbe451a}} 
+\#define {\bfseries cipher\+Key}~\textquotesingle{}S\textquotesingle{}
+\item 
+\mbox{\Hypertarget{Q2C_8c_a6e618c0ec6ffc8ac4489d11c65a5a67c}\label{Q2C_8c_a6e618c0ec6ffc8ac4489d11c65a5a67c}} 
+\#define {\bfseries sendrecvflag}~0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Q2C_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}{clear\+Buf} (char $\ast$b)
+\item 
+char \hyperlink{Q2C_8c_a4fc6ad5854f646cf1e284f66e104219f}{Cipher} (char ch)
+\item 
+int \hyperlink{Q2C_8c_a0d285ee71db2ee39e24c4a6e552991f3}{recv\+File} (char $\ast$buf, int s)
+\item 
+int \hyperlink{Q2C_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Q2  Client Side Code. 
+
+\begin{DoxyAuthor}{Author}
+Prateek 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Q2C_8c_a4fc6ad5854f646cf1e284f66e104219f}\label{Q2C_8c_a4fc6ad5854f646cf1e284f66e104219f}} 
+\index{Q2\+C.\+c@{Q2\+C.\+c}!Cipher@{Cipher}}
+\index{Cipher@{Cipher}!Q2\+C.\+c@{Q2\+C.\+c}}
+\subsubsection{\texorpdfstring{Cipher()}{Cipher()}}
+{\footnotesize\ttfamily char Cipher (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2C_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}\label{Q2C_8c_a37e9b2e0b0fcbe7d2d5bd9c9467c1fb8}} 
+\index{Q2\+C.\+c@{Q2\+C.\+c}!clear\+Buf@{clear\+Buf}}
+\index{clear\+Buf@{clear\+Buf}!Q2\+C.\+c@{Q2\+C.\+c}}
+\subsubsection{\texorpdfstring{clear\+Buf()}{clearBuf()}}
+{\footnotesize\ttfamily void clear\+Buf (\begin{DoxyParamCaption}\item[{char $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2C_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{Q2C_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Q2\+C.\+c@{Q2\+C.\+c}!main@{main}}
+\index{main@{main}!Q2\+C.\+c@{Q2\+C.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main Function. 
+
+\begin{DoxyReturn}{Returns}
+Int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Q2C_8c_a0d285ee71db2ee39e24c4a6e552991f3}\label{Q2C_8c_a0d285ee71db2ee39e24c4a6e552991f3}} 
+\index{Q2\+C.\+c@{Q2\+C.\+c}!recv\+File@{recv\+File}}
+\index{recv\+File@{recv\+File}!Q2\+C.\+c@{Q2\+C.\+c}}
+\subsubsection{\texorpdfstring{recv\+File()}{recvFile()}}
+{\footnotesize\ttfamily int recv\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Buffer} & \\
+\hline
+{\em Flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
