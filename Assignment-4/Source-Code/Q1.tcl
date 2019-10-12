@@ -22,8 +22,8 @@ set n2 [$ns node]
 
 $ns duplex-link $n0 $n1 350000b 2ms DropTail
 $ns duplex-link $n1 $n2 55000b 1ms DropTail
-$ns queue-limit $n0 $n1 5
-$ns queue-limit $n2 $n1 2
+$ns queue-limit $n0 $n1 10
+$ns queue-limit $n2 $n1 5
 
 set udp0 [new Agent/UDP]
 $ns attach-agent $n0 $udp0
